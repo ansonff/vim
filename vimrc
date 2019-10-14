@@ -17,7 +17,7 @@ set nobackup
 set noswapfile
 set history=1024
 " Automatically change the editing file's directory
-set autochdir
+"set autochdir (this seems not valid in linux)
 " 默认情况下，在 VIM 中当光标移到一行最左边的时候，我们继续按左键，光标不能回到上一行的最右边。同样地，光标到了一行最右边的时候，我们不能通过继续按右跳到下一行的最左边。但是，通过设置 whichwrap 我们可以对一部分按键开启这项功能
 set whichwrap=b,s,<,>,[,]
 set nobomb
@@ -26,7 +26,6 @@ set nobomb
 set clipboard+=unnamed
 " 设置 alt 键不映射到菜单栏
 set winaltkeys=no
-
 " }}}
 
 
@@ -75,5 +74,5 @@ set smartindent
 "set tabstop=4
 set expandtab
 "set softtabstop=4
-set foldmethod=indent
+"set foldmethod=indent (this seems not valid in linux)
 " }}}
